@@ -16,6 +16,11 @@ public class Student {
         this.studentId = studentId;
     }
 
+    public Student(String studentName) {
+        System.out.println("single parameter:: Name");
+        this.studentName = studentName;
+    }
+
     public Student(int studentId, String studentName, String studentAddress) {
         System.out.println("Student :: parameter");
 

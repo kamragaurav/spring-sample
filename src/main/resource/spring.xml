@@ -29,9 +29,15 @@
     </bean>
 
     <bean class="org.yash.domain.Student" scope="prototype" name="stu">
-            <constructor-arg value="14"/>
+            <constructor-arg value="14" type="int"/>
 
     </bean>
+
+    <bean class="org.yash.domain.Student" scope="prototype" name="singleStudent" >
+        <constructor-arg value = "14" type="java.lang.String"/>
+    </bean>
+
+
 
 <!--    <bean class="org.yash.domain.Student" id="s1" scope="prototype">
         <property name="studentId">

@@ -24,6 +24,9 @@ public class App
         Student student1 = (Student)ap.getBean("stu");
         System.out.println(student1);
 
+        Student student2 = (Student)ap.getBean("singleStudent");
+        System.out.println(student2);
+
 
     //    Resource resource = new ClassPathResource("spring.xml");
      //   BeanFactory ap = new XmlBeanFactory(resource);

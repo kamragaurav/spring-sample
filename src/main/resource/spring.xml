@@ -20,6 +20,19 @@
 
     </bean>
 
+
+    <bean class="org.yash.domain.Student" id="student" scope="prototype">
+        <constructor-arg value="12"/>
+        <constructor-arg value="gaurav"/>
+        <constructor-arg value="pune"/>
+
+    </bean>
+
+    <bean class="org.yash.domain.Student" scope="prototype" name="stu">
+            <constructor-arg value="14"/>
+
+    </bean>
+
 <!--    <bean class="org.yash.domain.Student" id="s1" scope="prototype">
         <property name="studentId">
             <value>123</value>

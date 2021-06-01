@@ -11,6 +11,11 @@ public class Student {
         System.out.println("Student :: default");
     }
 
+    public Student(int studentId) {
+        System.out.println("single parameter");
+        this.studentId = studentId;
+    }
+
     public Student(int studentId, String studentName, String studentAddress) {
         System.out.println("Student :: parameter");
 
@@ -41,5 +46,14 @@ public class Student {
 
     public void setStudentAddress(String studentAddress) {
         this.studentAddress = studentAddress;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + studentId +
+                ", studentName='" + studentName + '\'' +
+                ", studentAddress='" + studentAddress + '\'' +
+                '}';
     }
 }

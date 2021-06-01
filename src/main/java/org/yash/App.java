@@ -18,6 +18,12 @@ public class App
     {
 
         ApplicationContext ap = new ClassPathXmlApplicationContext("spring.xml");
+        Student student = (Student)ap.getBean("student");
+        System.out.println(student);
+
+        Student student1 = (Student)ap.getBean("stu");
+        System.out.println(student1);
+
 
     //    Resource resource = new ClassPathResource("spring.xml");
      //   BeanFactory ap = new XmlBeanFactory(resource);

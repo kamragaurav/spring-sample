@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
 
-    <bean class="org.yash.domain.Student" id="s">
+    <bean class="org.yash.domain.Student" id="s" scope="prototype">
         <property name="studentId">
             <value>123</value>
         </property>
@@ -19,6 +19,21 @@
         </property>
 
     </bean>
+
+<!--    <bean class="org.yash.domain.Student" id="s1" scope="prototype">
+        <property name="studentId">
+            <value>123</value>
+        </property>
+
+        <property name="studentName">
+            <value>"gk"</value>
+        </property>
+
+        <property name="studentAddress">
+            <value>"pune"</value>
+        </property>
+
+    </bean>-->
 
 
 </beans>

@@ -8,9 +8,12 @@ public class Student {
     private String studentAddress;
 
     public Student() {
+        System.out.println("Student :: default");
     }
 
     public Student(int studentId, String studentName, String studentAddress) {
+        System.out.println("Student :: parameter");
+
         this.studentId = studentId;
         this.studentName = studentName;
         this.studentAddress = studentAddress;

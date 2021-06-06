@@ -7,14 +7,14 @@
 
 
 
-    <bean class="org.yash.domain.Student" id="student" autowire="byName">
+    <bean class="org.yash.domain.Student" id="student" autowire="byType">
         <property name="studentId" value="111"/>
         <property name="studentName" value="gaurav"/>
 
 
     </bean>
 
-    <bean class="org.yash.domain.Address" id="address">
+    <bean class="org.yash.domain.Address" id="address1">
         <constructor-arg value="pune1"/>
         <constructor-arg value="India"/>
 

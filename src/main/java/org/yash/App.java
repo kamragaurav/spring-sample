@@ -12,10 +12,8 @@ public class App
 {
     public static void main( String[] args )
     {
-
         ApplicationContext ap = new ClassPathXmlApplicationContext("spring.xml");
         Student student = (Student)ap.getBean("student");
         System.out.println(student);
-
     }
 }

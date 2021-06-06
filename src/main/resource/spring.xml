@@ -7,9 +7,10 @@
 
 
 
-    <bean class="org.yash.domain.Student" id="student" autowire="constructor">
-        <constructor-arg value="12" type="int"/>
-        <constructor-arg value="gaurav" type="java.lang.String"/>
+    <bean class="org.yash.domain.Student" id="student" autowire="byName">
+        <property name="studentId" value="111"/>
+        <property name="studentName" value="gaurav"/>
+
 
     </bean>
 

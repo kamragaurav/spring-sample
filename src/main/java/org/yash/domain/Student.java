@@ -5,52 +5,12 @@ public class Student {
 
     private int studentId;
     private String studentName;
-    private String studentAddress;
+    private Address address;
 
-    public Student() {
-        System.out.println("Student :: default");
-    }
-
-    public Student(int studentId) {
-        System.out.println("single parameter");
-        this.studentId = studentId;
-    }
-
-    public Student(String studentName) {
-        System.out.println("single parameter:: Name");
-        this.studentName = studentName;
-    }
-
-    public Student(int studentId, String studentName, String studentAddress) {
-        System.out.println("Student :: parameter");
-
+    public Student(int studentId, String studentName, Address address) {
         this.studentId = studentId;
         this.studentName = studentName;
-        this.studentAddress = studentAddress;
-    }
-
-    public int getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
-    }
-
-    public String getStudentName() {
-        return studentName;
-    }
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
-
-    public String getStudentAddress() {
-        return studentAddress;
-    }
-
-    public void setStudentAddress(String studentAddress) {
-        this.studentAddress = studentAddress;
+        this.address = address;
     }
 
     @Override
@@ -58,7 +18,7 @@ public class Student {
         return "Student{" +
                 "studentId=" + studentId +
                 ", studentName='" + studentName + '\'' +
-                ", studentAddress='" + studentAddress + '\'' +
+                ", address=" + address +
                 '}';
     }
 }

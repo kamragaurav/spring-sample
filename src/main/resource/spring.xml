@@ -5,37 +5,21 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
 
-    <bean class="org.yash.domain.Student" id="s" scope="prototype">
-        <property name="studentId">
-            <value>123</value>
-        </property>
 
-        <property name="studentName">
-            <value>"gk"</value>
-        </property>
 
-        <property name="studentAddress">
-            <value>"pune"</value>
-        </property>
+    <bean class="org.yash.domain.Student" id="student" autowire="constructor">
+        <constructor-arg value="12" type="int"/>
+        <constructor-arg value="gaurav" type="java.lang.String"/>
+
+    </bean>
+
+    <bean class="org.yash.domain.Address" id="address">
+        <constructor-arg value="pune1"/>
+        <constructor-arg value="India"/>
 
     </bean>
 
 
-    <bean class="org.yash.domain.Student" id="student" scope="prototype">
-        <constructor-arg value="12"/>
-        <constructor-arg value="gaurav"/>
-        <constructor-arg value="pune"/>
-
-    </bean>
-
-    <bean class="org.yash.domain.Student" scope="prototype" name="stu">
-            <constructor-arg value="14" type="int"/>
-
-    </bean>
-
-    <bean class="org.yash.domain.Student" scope="prototype" name="singleStudent" >
-        <constructor-arg value = "14" type="java.lang.String"/>
-    </bean>
 
 
 
